@@ -106,7 +106,7 @@ resource "aws_cloudfront_distribution" "my-website-apex" {
   }
 
   viewer_certificate {
-    acm_certificate_arn = "arn:aws:acm:us-east-1:123456:certificate:a1b2c3d4..."
+    acm_certificate_arn = "${var.acm_arn}"
   }
 }
 
